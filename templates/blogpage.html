@@ -1,0 +1,23 @@
+$for(posts)$
+$if(teaser)$
+$teaser$
+<a href="$url$">Read more</a>
+$else$
+$body$
+$endif$
+(<a href="http://shenme.de/blog$url$#disqus_thread">comments</a>)
+$endfor$
+
+
+$if(previousPageNum)$
+<div>
+<a href="$previousPageUrl$">◀ Newer Entries</a>
+&nbsp;
+</div>
+$endif$
+$if(nextPageNum)$
+<div style="text-align:right;">
+<a href="$nextPageUrl$">Older Entries ▶</a>
+&nbsp;
+</div>
+$endif$
